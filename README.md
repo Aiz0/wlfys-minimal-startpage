@@ -1,3 +1,1 @@
-test
-
-dev branch
+As Firefox does not allow extensions to access local files anymore, everything has been put on one file only. I can't setup a web server for the moment so sorry about the messy code (i.e. style in html).
