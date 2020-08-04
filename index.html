@@ -57,18 +57,28 @@
 			/* Id styles */
 			#lists {
 				display: flex;
+				flex-wrap: wrap;
 			}
 
 			#main_window {
 				background-color: #3f3f3f;
+
+				display: flex;
+				flex-direction: column;
+				
+				width: 50%;
+				padding: 100px;
+
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
 			}
 
 
 			/* Classes style */
-
-/*			.container {
-				display: flex;
-			}*/
 
 			.quote {
 				font-weight: bold;
@@ -89,7 +99,7 @@
 	</head>
 
 	<body>
-		<div class="container" id="main_window">
+		<div id="main_window">
 			<h1 class="title">Welcome</h1>
 			<script id="date" type="text/javascript">
 				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
