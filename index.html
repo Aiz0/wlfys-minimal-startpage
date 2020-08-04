@@ -9,16 +9,16 @@
 			:root {
 				--yellow: #f0dfaf;
 				--blue: #93BDF0;
-				--red: #DC8CC3;
-				--green: #60B48A;
+				--red: #BD9980;
+				--green: #BAC2B8;
 				--cyan: #8CD0D3;
 				--white: #DCDCCC;
 			}
 
-			a, a:visited{
+			/*a, a:visited{
 				color: var(--white);
 				text-decoration: none;
-			}
+			}*/
 
 			body {
 				background-color: #282828;
@@ -27,22 +27,23 @@
 			}
 
 			form {
-				margin: 1em;
+				margin: 1em 0;
 				position: relative;
 			}
 
 			form input[type="search"] {
-				background-color: rgba(255, 255, 255, 0.95);
+				background-color: rgba(255, 255, 255, 0.0);
 				border: none;
 				box-sizing: border-box;
 				font-weight: bold;
 				font: inherit;
+				margin-left: 12px;
 				width: 100%;
+				color: var(--yellow);
 			}
 
 			form label {
-				color: #1d81b2;
-				left: -1em;
+				color: var(yellow);
 				position: absolute;
 			}
 
@@ -52,9 +53,40 @@
 
 			ul {
 				list-style-type: none;
+				text-align: left;
+				border-color: var(--white);
+				border-right-width: 1px;
+				border-right-style: solid;
+				padding: 2px 10px;
 			}
 
-			/* Id styles */
+			ul[class=blue]:hover {
+				color: var(--blue);
+			}
+
+			ul[class=green]:hover {
+				color: var(--green);
+			}
+
+			ul[class=red]:hover {
+				color: var(--red);
+			}
+
+			ul[class=yellow]:hover {
+				color: var(--yellow);
+			}
+
+			ul > li > a {
+				text-decoration: none;
+				color: var(--white);
+			}
+
+			ul > li > a:hover {
+				color: var(--red);
+				transition: all 0.4s;
+			}
+
+
 			#lists {
 				display: flex;
 				flex-wrap: wrap;
@@ -62,12 +94,9 @@
 
 			#main_window {
 				background-color: #3f3f3f;
-
-				display: flex;
-				flex-direction: column;
 				
 				width: 50%;
-				padding: 100px;
+				padding-right: 50px;
 
 				margin: 0;
 				position: absolute;
@@ -78,20 +107,61 @@
 			}
 
 
-			/* Classes style */
-
 			.quote {
 				font-weight: bold;
 			}
 
 			.subtitle {
 				font-weight: bold;
-				color: var(--blue);
+				color: var(--red);
 			}
 
 			.title {
 				font-weight: bold;
 				font-style: italic;
+			}
+
+			.image {
+				max-width: 250px;
+				float: left;
+			}
+
+			.bottom {
+				position: fixed;
+				bottom: 0;
+				font-size: 0.52em;
+			}
+
+			/*Is for debug*/
+			#red {
+				padding-top: 30px;
+				/*background-color: red;*/
+				height: auto;
+				margin: auto;
+				margin-left: 300px;
+			}
+
+			#credits {
+				left: 0;
+			}
+
+			#contact {
+				position: fixed;
+				bottom: 0;
+				right: 0px;
+			}
+
+			p[class=credits] > a {
+				text-decoration: none;
+				position: fixed;
+				color: var(--yellow);
+				bottom: 7px;
+				right: 10px;
+			}
+
+			div[class=contacts] > p > a {
+				text-decoration: none;
+				color: var(--yellow);
 			}
 
 		</style>
@@ -100,62 +170,77 @@
 
 	<body>
 		<div id="main_window">
-			<h1 class="title">Welcome</h1>
-			<script id="date" type="text/javascript">
-				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-				var d = new Date();
-				document.write(months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
-			</script>
+			<img src="https://i.imgur.com/YFvTLmg.png" class="image">
 
-			<div id="web_search">
-				<form action="https://duckduckgo.com/" method="GET">
-  						<label for="q">></label>
-  						<input autofocus
-				         id="q"
-				         name="q"
-				         type="search"
-				         placeholder="search with duckduckgo...">
-				</form>
-			</div>
-
-			<nav>
-				<div id=lists>
-					<ul class="">
-						<a class="subtitle">Frequent</a>
-							<li><a href="https://genius.com/">Genius</a></li>
-							<li><a href="https://gitlab.com/">GitLab</a></li>
-							<li><a href="https://www.google.com/">Google</a></li>
-					</ul>
-
-					<ul class="">
-						<a class="subtitle">Media</a>
-							<li><a href="https://www.netflix.com/browse">Netflix</a></li>
-							<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
-							<li><a href="https://www.youtube.com/">YouTube</a></li>
-					</ul>
-
-					<ul>
-						<a class="subtitle">Social medias</a>
-							<li><a href="https://www.instagram.com/">Instagram</a></li>
-							<li><a href="https://www.reddit.com/">Reddit</a></li>
-							<li><a href="https://twitter.com/home">Twitter</a></li>
-					</ul>
-
-					<ul class="">
-						<a class="subtitle">Studies</a>
-							<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
-							<li><a href="https://ewa.epfl.ch/">Mail</a></li>
-							<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
-					</ul>
-
-					<ul class="">
-						<a class="subtitle">Others</a>
-							<li><a href="https://www.digitec.ch/">Digitec</a></li>
-							<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
-							<li><a href="http://192.168.1.130:8080">Komga</a></li>
-					</ul>
+			<div id="red">
+				<h1 class="title">Welcome</h1>
+				<script id="date" type="text/javascript">
+					var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+					var d = new Date();
+					document.write(months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
+				</script>
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET">
+						<label for="q">></label>
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
 				</div>
-			</nav>
+
+				<nav>
+						<div id=lists>
+							<ul class="red">
+								<a class="subtitle">Frequent</a>
+									<li><a href="https://genius.com/">Genius</a></li>
+									<li><a href="https://gitlab.com/">GitLab</a></li>
+									<li><a href="https://www.google.com/">Google</a></li>
+							</ul>
+
+							<ul class="yellow">
+								<a class="subtitle">Media</a>
+									<li><a href="https://www.netflix.com/browse">Netflix</a></li>
+									<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
+									<li><a href="https://www.youtube.com/">YouTube</a></li>
+							</ul>
+
+							<ul>
+								<a class="subtitle">Social medias</a>
+									<li><a href="https://www.instagram.com/">Instagram</a></li>
+									<li><a href="https://www.reddit.com/">Reddit</a></li>
+									<li><a href="https://twitter.com/home">Twitter</a></li>
+							</ul>
+
+							<ul class="green">
+								<a class="subtitle">Studies</a>
+									<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
+									<li><a href="https://ewa.epfl.ch/">Mail</a></li>
+									<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
+							</ul>
+
+							<ul class="blue">
+								<a class="subtitle">Others</a>
+									<li><a href="https://www.digitec.ch/">Digitec</a></li>
+									<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
+									<li><a href="http://192.168.1.130:8080">Komga</a></li>
+							</ul>
+						</div>
+					</nav>
+			</div>
+		</div>
+
+		<div class="bottom">
+			<p class="credits">
+				<a href="https://www.deviantart.com/nuralifsidoel/art/Futaba-Rio-Seishun-Buta-Yarou-Vector-778405449">Art by NurAlifSidoel on DeviantArt</a>
+			</p>
+
+			<div class="contacts">
+				<p>
+					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | <a href="https://twitter.com/wolfiiy">Twitter</a> | <a href="https://youtube.com/DarkWolfiiy">YouTube</a>
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
