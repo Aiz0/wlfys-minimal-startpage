@@ -3,137 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<title>~</title>
-		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-
-		<style type="text/css">
-			:root {
-				--yellow: #f0dfaf;
-				--blue: #93BDF0;
-				--red: #BD9980;
-				--green: #BAC2B8;
-				--cyan: #8CD0D3;
-				--white: #DCDCCC;
-			}
-
-			body {
-				background-color: #282828;
-				font-family: 'Space Mono', monospace;
-				color: var(--yellow);
-			}
-
-			form {
-				margin: 1em 0;
-				position: relative;
-			}
-
-			form input[type="search"] {
-				background-color: rgba(255, 255, 255, 0.0);
-				border: none;
-				box-sizing: border-box;
-				font-weight: bold;
-				font: inherit;
-				margin-left: 12px;
-				width: 100%;
-				color: var(--yellow);
-			}
-
-			form label {
-				color: var(yellow);
-				position: absolute;
-			}
-
-			form:focus-within input::placeholder {
-				opacity: 0;
-			}
-
-			ul {
-				list-style-type: none;
-				text-align: left;
-				padding: 2px 15px;
-			}
-
-			ul > li > a {
-				text-decoration: none;
-				color: var(--white);
-			}
-
-			ul > li > a:hover {
-				color: var(--red);
-				transition: all 0.4s;
-			}
-
-			p[class=credits] > a {
-				position: fixed;
-				bottom: 7px;
-				right: 10px;
-			}
-
-			.bottom a {
-				text-decoration: none;
-				color: var(--yellow);
-			}
-
-			.bottom a:hover {
-				text-decoration: underline;
-			}
-
-			#links_container {
-				display: flex;
-				flex-wrap: wrap;
-			}
-
-			#main_window {
-				background-color: #3f3f3f;
-				width: 53%;
-				padding-right: 50px;
-				margin: 0;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				-ms-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-
-			.subtitle {
-				font-weight: bold;
-				color: var(--red);
-			}
-
-			.title {
-				font-weight: bold;
-				font-style: italic;
-			}
-
-			.image {
-				max-width: 250px;
-				float: left;
-			}
-
-			.bottom {
-				position: fixed;
-				bottom: 0;
-				font-size: 0.52em;
-			}
-
-			#content {
-				padding-top: 30px;
-				height: auto;
-				margin-left: 300px;
-			}
-		</style>
-
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 	</head>
 
 	<body>
 		<div id="main_window">
-			<img src="https://i.imgur.com/YFvTLmg.png" class="image">
+			<img src="assets/img/image.png" class="image">
 
 			<div id="content">
 				<h1 class="title">Welcome</h1>
 				<script id="date" type="text/javascript">
 					var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 					var d = new Date();
-					document.write(months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
+					document.write(months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear() + " | " + d.getHours() + ":" + d.getMinutes());
 				</script>
 				<div id="web_search">
 					<form action="https://duckduckgo.com/" method="GET">
@@ -147,43 +30,39 @@
 				</div>
 
 				<nav>
-						<div id=links_container>
-							<ul>
-								<a class="subtitle">Frequent</a>
-									<li><a href="https://genius.com/">Genius</a></li>
-									<li><a href="https://gitlab.com/">GitLab</a></li>
-									<li><a href="https://www.google.com/">Google</a></li>
-							</ul>
-
-							<ul>
-								<a class="subtitle">Media</a>
-									<li><a href="https://www.netflix.com/browse">Netflix</a></li>
-									<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
-									<li><a href="https://www.youtube.com/">YouTube</a></li>
-							</ul>
-
-							<ul>
-								<a class="subtitle">Social medias</a>
-									<li><a href="https://www.instagram.com/">Instagram</a></li>
-									<li><a href="https://www.reddit.com/">Reddit</a></li>
-									<li><a href="https://twitter.com/home">Twitter</a></li>
-							</ul>
-
-							<ul>
-								<a class="subtitle">Studies</a>
-									<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
-									<li><a href="https://ewa.epfl.ch/">Mail</a></li>
-									<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
-							</ul>
-
-							<ul>
-								<a class="subtitle">Others</a>
-									<li><a href="https://www.digitec.ch/">Digitec</a></li>
-									<li><a href="http://192.168.1.130:8080">Komga</a></li>
-									<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
-							</ul>
-						</div>
-					</nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Frequent</a>
+								<li><a href="https://genius.com/">Genius</a></li>
+								<li><a href="https://gitlab.com/">GitLab</a></li>
+								<li><a href="https://www.google.com/">Google</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Media</a>
+								<li><a href="https://www.netflix.com/browse">Netflix</a></li>
+								<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
+								<li><a href="https://www.youtube.com/">YouTube</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Social medias</a>
+								<li><a href="https://www.instagram.com/">Instagram</a></li>
+								<li><a href="https://www.reddit.com/">Reddit</a></li>
+								<li><a href="https://twitter.com/home">Twitter</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Studies</a>
+								<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
+								<li><a href="https://ewa.epfl.ch/">Mail</a></li>
+								<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Others</a>
+								<li><a href="https://www.digitec.ch/">Digitec</a></li>
+								<li><a href="http://192.168.1.130:8080">Komga</a></li>
+								<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
+						</ul>
+					</div>
+				</nav>
 			</div>
 		</div>
 

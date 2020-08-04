@@ -1,0 +1,123 @@
+/*This file is by the regular version of the startpage (file index.html)
+  The single page version has embedded styling for use with Firefox.*/
+
+/*Change these variables to match with your setup. These colors work for
+  the image I used and my overall desktop theme (see here:
+  https://i.imgur.com/gxMdNKi.png).*/
+:root {
+	--red: #BD9980;
+	--white: #DCDCCC;
+	--yellow: #f0dfaf;
+
+	--bg: #282828;
+	--fg: #3f3f3f;
+
+	--search-bg: rgba(255, 255, 255, 0);
+	}
+
+body {
+	background-color: var(--bg);
+	font-family: 'Space Mono', monospace;
+	color: var(--yellow);
+}
+
+ul {
+	list-style-type: none;
+	text-align: left;
+	padding: 2px 15px;
+}
+
+p[class=credits] > a {
+	position: fixed;
+	bottom: 7px;
+	right: 10px;
+}
+
+/*Form based off of Vallode's work:
+  https://codepen.io/Vallode/pen/abdYLOd*/
+form {
+	margin: 1em 0;
+	position: relative;
+}
+
+form input[type="search"] {
+	background-color: var(--search-bg);
+	border: none;
+	box-sizing: border-box;
+	font-weight: bold;
+	font: inherit;
+	margin-left: 12px;
+	width: 100%;
+	color: var(--yellow);
+}	
+
+form label {
+	color: var(--yellow);
+	position: absolute;
+}
+
+form:focus-within input::placeholder {
+	opacity: 0;
+}
+
+#main_window {
+	background-color: var(--fg);
+	width: 53%;
+	padding-right: 50px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#content {
+	padding-top: 30px;
+	margin-left: 300px;
+}
+
+#links_container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#links_container li, a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+#links_container a:hover {
+	color: var(--red);
+	transition: all 0.4s;
+}
+
+.subtitle {
+	font-weight: bold;
+	color: var(--red);
+}
+
+.title {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.image {
+	max-width: 250px;
+	float: left;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 0;
+	font-size: 0.52em;
+}
+
+.bottom a {
+	text-decoration: none;
+	color: var(--yellow);
+}
+
+.bottom a:hover {
+	text-decoration: underline;
+}
