@@ -63,8 +63,8 @@ form:focus-within input::placeholder {
 
 #main_window {
 	background-color: var(--fg);
-	width: 53%;
-	padding-right: 50px;
+	width: 910px;
+	padding-right: 40px;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -121,4 +121,32 @@ form:focus-within input::placeholder {
 
 .bottom a:hover {
 	text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+	img#leftImg {
+    	display: none;
+  	}
+
+  	#main_window {
+		width: 65%;
+		padding-right: 0;
+	}
+
+	#content {
+		padding-top: 0px;
+		margin-left: 20px;
+	}
+}
+
+@media (max-width: 960px) {
+	#main_window {
+		width: 630px;
+	}
+}
+
+@media (max-width: 660px) {
+	#main_window {
+		width: 100%;
+	}
 }
