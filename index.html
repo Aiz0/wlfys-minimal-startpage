@@ -6,11 +6,63 @@
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 
 		<style type="text/css">
+			:root {
+				--yellow: #f0dfaf;
+				--blue: #93BDF0;
+				--red: #DC8CC3;
+				--green: #60B48A;
+				--cyan: #8CD0D3;
+				--white: #DCDCCC;
+			}
+
+			a, a:visited{
+				color: var(--white);
+				text-decoration: none;
+			}
+
 			body {
 				background-color: #282828;
 				font-family: 'Space Mono', monospace;
-				color: #f0dfaf;
+				color: var(--yellow);
 			}
+
+			form {
+				margin: 1em;
+				position: relative;
+			}
+
+			form input[type="search"] {
+				background-color: rgba(255, 255, 255, 0.95);
+				border: none;
+				box-sizing: border-box;
+				font-weight: bold;
+				font: inherit;
+				width: 100%;
+			}
+
+			form label {
+				color: #1d81b2;
+				left: -1em;
+				position: absolute;
+			}
+
+			form:focus-within input::placeholder {
+				opacity: 0;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			/* Id styles */
+			#lists {
+				display: flex;
+			}
+
+			#main_window {
+				background-color: #3f3f3f;
+			}
+
 
 			/* Classes style */
 
@@ -24,7 +76,7 @@
 
 			.subtitle {
 				font-weight: bold;
-				color: #93BDF0;
+				color: var(--blue);
 			}
 
 			.title {
@@ -38,43 +90,61 @@
 
 	<body>
 		<div class="container" id="main_window">
-			<h1 class="title">Title</h1>
-			<p class="quote">quote or sth</p>
+			<h1 class="title">Welcome</h1>
+			<script id="date" type="text/javascript">
+				var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				var d = new Date();
+				document.write(months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear());
+			</script>
+
+			<div id="web_search">
+				<form action="https://duckduckgo.com/" method="GET">
+  						<label for="q">></label>
+  						<input autofocus
+				         id="q"
+				         name="q"
+				         type="search"
+				         placeholder="search with duckduckgo...">
+				</form>
+			</div>
+
 			<nav>
-				<ul class="">
-					<a class="subtitle">Frequent</a>
-						<li><a href="https://genius.com/">Genius</a></li>
-						<li><a href="https://gitlab.com/">GitLab</a></li>
-						<li><a href="https://www.google.com/">Google</a></li>
-				</ul>
+				<div id=lists>
+					<ul class="">
+						<a class="subtitle">Frequent</a>
+							<li><a href="https://genius.com/">Genius</a></li>
+							<li><a href="https://gitlab.com/">GitLab</a></li>
+							<li><a href="https://www.google.com/">Google</a></li>
+					</ul>
 
-				<ul class="">
-					<a class="subtitle">Media</a>
-						<li><a href="https://www.netflix.com/browse">Netflix</a></li>
-						<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
-						<li><a href="https://www.youtube.com/">YouTube</a></li>
-				</ul>
+					<ul class="">
+						<a class="subtitle">Media</a>
+							<li><a href="https://www.netflix.com/browse">Netflix</a></li>
+							<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
+							<li><a href="https://www.youtube.com/">YouTube</a></li>
+					</ul>
 
-				<ul>
-					<a class="subtitle">Social medias</a>
-						<li><a href="https://www.instagram.com/">Instagram</a></li>
-						<li><a href="https://www.reddit.com/">Reddit</a></li>
-						<li><a href="https://twitter.com/home">Twitter</a></li>
-				</ul>
+					<ul>
+						<a class="subtitle">Social medias</a>
+							<li><a href="https://www.instagram.com/">Instagram</a></li>
+							<li><a href="https://www.reddit.com/">Reddit</a></li>
+							<li><a href="https://twitter.com/home">Twitter</a></li>
+					</ul>
 
-				<ul class="">
-					<a class="subtitle">Studies</a>
-						<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
-						<li><a href="https://ewa.epfl.ch/">Mail</a></li>
-						<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
-				</ul>
+					<ul class="">
+						<a class="subtitle">Studies</a>
+							<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
+							<li><a href="https://ewa.epfl.ch/">Mail</a></li>
+							<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
+					</ul>
 
-				<ul class="">
-					<a class="subtitle">Others</a>
-						<li><a href="https://www.digitec.ch/">Digitec</a></li>
-						<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
-						<li><a href="http://192.168.1.130:8080">Komga</a></li>
-				</ul>
+					<ul class="">
+						<a class="subtitle">Others</a>
+							<li><a href="https://www.digitec.ch/">Digitec</a></li>
+							<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
+							<li><a href="http://192.168.1.130:8080">Komga</a></li>
+					</ul>
+				</div>
 			</nav>
 		</div>
 	</body>
