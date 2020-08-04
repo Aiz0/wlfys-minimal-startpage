@@ -15,11 +15,6 @@
 				--white: #DCDCCC;
 			}
 
-			/*a, a:visited{
-				color: var(--white);
-				text-decoration: none;
-			}*/
-
 			body {
 				background-color: #282828;
 				font-family: 'Space Mono', monospace;
@@ -54,26 +49,7 @@
 			ul {
 				list-style-type: none;
 				text-align: left;
-				border-color: var(--white);
-				border-right-width: 1px;
-				border-right-style: solid;
-				padding: 2px 10px;
-			}
-
-			ul[class=blue]:hover {
-				color: var(--blue);
-			}
-
-			ul[class=green]:hover {
-				color: var(--green);
-			}
-
-			ul[class=red]:hover {
-				color: var(--red);
-			}
-
-			ul[class=yellow]:hover {
-				color: var(--yellow);
+				padding: 2px 15px;
 			}
 
 			ul > li > a {
@@ -86,29 +62,36 @@
 				transition: all 0.4s;
 			}
 
+			p[class=credits] > a {
+				position: fixed;
+				bottom: 7px;
+				right: 10px;
+			}
 
-			#lists {
+			.bottom a {
+				text-decoration: none;
+				color: var(--yellow);
+			}
+
+			.bottom a:hover {
+				text-decoration: underline;
+			}
+
+			#links_container {
 				display: flex;
 				flex-wrap: wrap;
 			}
 
 			#main_window {
 				background-color: #3f3f3f;
-				
-				width: 50%;
+				width: 53%;
 				padding-right: 50px;
-
 				margin: 0;
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				-ms-transform: translate(-50%, -50%);
 				transform: translate(-50%, -50%);
-			}
-
-
-			.quote {
-				font-weight: bold;
 			}
 
 			.subtitle {
@@ -132,38 +115,11 @@
 				font-size: 0.52em;
 			}
 
-			/*Is for debug*/
-			#red {
+			#content {
 				padding-top: 30px;
-				/*background-color: red;*/
 				height: auto;
-				margin: auto;
 				margin-left: 300px;
 			}
-
-			#credits {
-				left: 0;
-			}
-
-			#contact {
-				position: fixed;
-				bottom: 0;
-				right: 0px;
-			}
-
-			p[class=credits] > a {
-				text-decoration: none;
-				position: fixed;
-				color: var(--yellow);
-				bottom: 7px;
-				right: 10px;
-			}
-
-			div[class=contacts] > p > a {
-				text-decoration: none;
-				color: var(--yellow);
-			}
-
 		</style>
 
 	</head>
@@ -172,7 +128,7 @@
 		<div id="main_window">
 			<img src="https://i.imgur.com/YFvTLmg.png" class="image">
 
-			<div id="red">
+			<div id="content">
 				<h1 class="title">Welcome</h1>
 				<script id="date" type="text/javascript">
 					var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -191,15 +147,15 @@
 				</div>
 
 				<nav>
-						<div id=lists>
-							<ul class="red">
+						<div id=links_container>
+							<ul>
 								<a class="subtitle">Frequent</a>
 									<li><a href="https://genius.com/">Genius</a></li>
 									<li><a href="https://gitlab.com/">GitLab</a></li>
 									<li><a href="https://www.google.com/">Google</a></li>
 							</ul>
 
-							<ul class="yellow">
+							<ul>
 								<a class="subtitle">Media</a>
 									<li><a href="https://www.netflix.com/browse">Netflix</a></li>
 									<li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
@@ -213,18 +169,18 @@
 									<li><a href="https://twitter.com/home">Twitter</a></li>
 							</ul>
 
-							<ul class="green">
+							<ul>
 								<a class="subtitle">Studies</a>
 									<li><a href="https://www.epfl.ch/campus/security-safety/en/health/coronavirus-covid19/">COVID-19</a></li>
 									<li><a href="https://ewa.epfl.ch/">Mail</a></li>
 									<li><a href="https://moodle.epfl.ch/">Moodle</a></li>
 							</ul>
 
-							<ul class="blue">
+							<ul>
 								<a class="subtitle">Others</a>
 									<li><a href="https://www.digitec.ch/">Digitec</a></li>
-									<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
 									<li><a href="http://192.168.1.130:8080">Komga</a></li>
+									<li><a href="https://rarbgenter.org/index80.php">RARBG</a></li>
 							</ul>
 						</div>
 					</nav>
