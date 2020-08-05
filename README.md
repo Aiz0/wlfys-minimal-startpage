@@ -11,7 +11,7 @@ You can the single page version as is with FireFox using the NewTab Override ext
 
 I'm not a web developer, I only learned the basics of HTML and CSS in high school and I haven't used them for a while. Don't hesitate to fork and modify to your liking. The scaling issues that were happening should be mostly fixed now (see the above pictures).
 
-If you find any bugs and/or have suggestions to improve the page (for instance better scaling, etc.), you can DM me on Twitter or Reddit.
+If you find any bugs and/or have suggestions to improve the page (for instance better scaling, etc.), you can DM me on [Twitter](https://twitter.com/wolfiiy) or [Reddit](https://www.reddit.com/user/Wolfiy/).
 
 Thanks for checking this out :)
 
