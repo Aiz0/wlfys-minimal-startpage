@@ -1,4 +1,4 @@
-/*This file is by the regular version of the startpage (file index.html)
+/*This file is for the regular version of the startpage (file index.html)
   The single page version has embedded styling for use with Firefox.
   This version is also probably more often updated.*/
 
@@ -123,23 +123,15 @@ form:focus-within input::placeholder {
 	text-decoration: underline;
 }
 
-@media (max-width: 980px) {
-	img#leftImg {
-    	display: none;
-  	}
-
-  	#main_window {
-		width: 65%;
-		padding-right: 0;
-	}
-
-	#content {
-		padding-top: 0px;
-		margin-left: 20px;
-	}
-
+@media (max-width: 455px) {
 	form input[type="search"] {
-		width: 94%;
+		width: 90%;
+	}
+}
+
+@media (max-width: 660px) {
+	#main_window {
+		width: 100%;
 	}
 }
 
@@ -149,8 +141,45 @@ form:focus-within input::placeholder {
 	}
 }
 
-@media (max-width: 660px) {
+@media (max-width: 980px) {
+	img#leftImg {
+    	/*display: none;*/
+    	height: 280px;
+  	}
+
+  	#main_window {
+		/*width: 65%;*/
+		width: 833px;
+		padding-right: 0;
+	}
+
+	ul {
+		padding-top: 0px;
+		margin-top: -7px;
+	}
+
+	#content {
+		padding-top: 0px;
+		margin-left: 220px;
+		padding-bottom: 0px;
+	}
+
+	form input[type="search"] {
+		/*width: 94%;*/
+		width: 70%;
+	}
+}
+
+@media (max-width: 833px) {
+	img#leftImg {
+		display: none;
+	}
+
 	#main_window {
-		width: 100%;
+		width: 650px;
+	}
+
+	#content {
+		margin-left: 20px;
 	}
 }
