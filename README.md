@@ -1,5 +1,6 @@
 # wlfy's minimal startpage
 This is a simple, minimal startpage I made to match my desktop's overall theme.
+
 ![Fullscreen view](assets/img/fs.png)
 ![Responsive view](assets/img/responsive.png)
 
@@ -14,6 +15,6 @@ If you find any bugs and/or have suggestions to improve the page (for instance b
 
 Thanks for checking this out :)
 
-#### Credits
+## Credits
 I was inspired by [RamenMaestro's startpage](https://github.com/RamenMaestro/startpage).
 The art is by [NurAlifSidoel](https://www.deviantart.com/nuralifsidoel/art/Futaba-Rio-Seishun-Buta-Yarou-Vector-778405449).
