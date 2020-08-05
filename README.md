@@ -1,5 +1,4 @@
 # wlfy's minimal startpage
-========
 This is a simple, minimal startpage I made to match my desktop's overall theme.
 ![Fullscreen view](assets/img/fs.png)
 ![Responsive view](assets/img/responsive.png)
