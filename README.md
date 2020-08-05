@@ -17,4 +17,7 @@ Thanks for checking this out :)
 
 ## Credits
 I was inspired by [RamenMaestro's startpage](https://github.com/RamenMaestro/startpage).
+
 The art is by [NurAlifSidoel](https://www.deviantart.com/nuralifsidoel/art/Futaba-Rio-Seishun-Buta-Yarou-Vector-778405449).
+
+I use [this](https://github.com/evanswa0606/firefox-simpletheme) CSS by evanswa0606 for my browser (Firefox). You might need to tweak it a little as it is optimized for macOS. On my setup, I also changed the colors to match my DE's theme.
