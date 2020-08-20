@@ -16,6 +16,17 @@
 	--search-bg: rgba(255, 255, 255, 0);
 	}
 
+.lightmode {
+	--red: #5f605b;
+	--white: #7f807b;
+	--yellow: #494846;
+
+	--bg: #f0f0f0;
+	--fg: #e7e7e7;
+
+	--search-bg: rgba(255, 255, 255, 0);
+}
+
 body {
 	background-color: var(--bg);
 	font-family: 'Space Mono', monospace;

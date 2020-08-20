@@ -8,9 +8,10 @@
 	</head>
 
 	<body>
+
+		<!-- Welcome screen -->
 		<div id="main_window">
 			<img id=leftImg src="assets/img/image.png" class="image">
-
 			<div id="content">
 				<h1 class="title">Welcome</h1>
 				<div id="date">
@@ -29,6 +30,7 @@
 					</script>
 				</div>
 
+		<!-- Web search -->
 				<div id="web_search">
 					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
 						<label for="q">></label>
@@ -40,6 +42,7 @@
 					</form>
 				</div>
 
+		<!-- Links -->
 				<nav>
 					<div id=links_container>
 						<ul>
@@ -77,6 +80,7 @@
 			</div>
 		</div>
 
+		<!-- Footer -->
 		<div class="bottom">
 			<p class="credits">
 				<a href="https://www.deviantart.com/nuralifsidoel/art/Futaba-Rio-Seishun-Buta-Yarou-Vector-778405449">Art by NurAlifSidoel on DeviantArt</a>
@@ -84,9 +88,12 @@
 
 			<div class="contacts">
 				<p>
-					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | <a href="https://twitter.com/wolfiiy">Twitter</a>
+					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | 
+					<span id="light-mode-toggle" class="light-mode-toggle">Switch theme</span>
 				</p>
 			</div>
 		</div>
+		
+		<script src="scripts/darkmode.js"></script>
 	</body>
 </html>

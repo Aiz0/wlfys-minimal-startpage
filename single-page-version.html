@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>~ sp</title>
+		<title>~</title>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<style type="text/css">
 			/*Change these variables to match with your setup. These colors work for
@@ -18,6 +18,17 @@
 
 				--search-bg: rgba(255, 255, 255, 0);
 				}
+
+			.lightmode {
+				--red: #5f605b;
+				--white: #7f807b;
+				--yellow: #494846;
+
+				--bg: #f0f0f0;
+				--fg: #e7e7e7;
+
+				--search-bg: rgba(255, 255, 255, 0);
+			}
 
 			body {
 				background-color: var(--bg);
@@ -252,9 +263,45 @@
 
 			<div class="contacts">
 				<p>
-					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | <a href="https://twitter.com/wolfiiy">Twitter</a>
+					<a href="https://gitlab.com/wolfiy/wlfys-minimal-startpage">GitLab Repo</a> | 
+					<span id="light-mode-toggle" class="light-mode-toggle">Switch theme</span>
 				</p>
 			</div>
 		</div>
+
+		<script type="text/javascript">
+			/*
+			  Thanks to POWELL Kevin for his YouTube tutorial.
+			  https://www.youtube.com/watch?v=wodWDIdV9BY
+			*/
+
+			let lightMode = localStorage.getItem('lightMode');
+			const lightModeToggle = document.querySelector('#light-mode-toggle');
+
+			const enableLightMode = () => {
+				document.body.classList.add('lightmode');
+				localStorage.setItem('lightMode', 'enabled');
+			}
+
+			const disableLightMode = () => {
+				document.body.classList.remove('lightmode');
+				localStorage.setItem('lightMode', null);
+			}
+
+			if (lightMode === 'enabled') {
+				enableLightMode();
+			}
+
+			lightModeToggle.addEventListener('click', () => {
+				lightMode = localStorage.getItem('lightMode');
+				if (lightMode !== 'enabled') {
+					enableLightMode();
+					console.log(lightMode);
+				} else {
+					disableLightMode();
+					console.log(lightMode);
+				}
+			});
+		</script>
 	</body>
 </html>
