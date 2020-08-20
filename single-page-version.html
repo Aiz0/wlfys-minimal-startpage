@@ -182,12 +182,21 @@
 
 			<div id="content">
 				<h1 class="title">Welcome</h1>
-				<script id="date" type="text/javascript">
-					// Thanks to Teiem1 on Reddit for the suggestion :)
-					var d = new Intl.DateTimeFormat('en-US', {month: "long", day:"numeric", year: "numeric"}).format(new Date());
-					var h = new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric', hour12: false}).format(new Date());
-					document.write(d + " | " + h);
-				</script>
+				<div id="date">
+					<script type="text/javascript">
+						function doDate() {
+							var str = "";
+							var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+							var clock = new Date();
+							var now = new Date();
+
+							str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+							document.getElementById("date").innerHTML = str;
+						}
+						setInterval(doDate, 1000);
+						doDate();
+					</script>
+				</div>
 				<div id="web_search">
 					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
 						<label for="q">></label>
