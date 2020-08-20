@@ -1,8 +1,7 @@
 # wlfy's minimal startpage
 This is a simple, minimal startpage I made to match my desktop's overall theme.
 
-![Fullscreen view](assets/img/fs.png)
-![Responsive view](assets/img/responsive.png)
+![Fullscreen view](assets/img/fs.png) ![Responsive view](assets/img/responsive.png)
 ![Light theme](assets/img/light.png)
 
 A live demo is available [here](https://wolfiy.gitlab.io/wlfys-minimal-startpage/).
