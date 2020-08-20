@@ -3,6 +3,7 @@ This is a simple, minimal startpage I made to match my desktop's overall theme.
 
 ![Fullscreen view](assets/img/fs.png)
 ![Responsive view](assets/img/responsive.png)
+![Light theme](assets/img/light.png)
 
 A live demo is available [here](https://wolfiy.gitlab.io/wlfys-minimal-startpage/).
 
@@ -14,6 +15,9 @@ I'm not a web developer, I only learned the basics of HTML and CSS in high schoo
 If you find any bugs and/or have suggestions to improve the page (for instance better scaling, etc.), you can DM me on [Twitter](https://twitter.com/wolfiiy) or [Reddit](https://www.reddit.com/user/Wolfiy/).
 
 Thanks for checking this out :)
+
+_Update Aug 20_
+You can switch between dark and light theme by clicking the "Switch themes" text on the bottom!
 
 ## Credits
 I was inspired by [RamenMaestro's startpage](https://github.com/RamenMaestro/startpage).
