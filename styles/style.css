@@ -139,6 +139,14 @@ form:focus-within input::placeholder {
 	text-decoration: underline;
 }
 
+#light-mode-toggle {
+	cursor: pointer;
+}
+
+#light-mode-toggle:hover {
+	text-decoration: underline;
+}
+
 @media (max-width: 980px) {
 	img#leftImg {
     	height: 280px;
