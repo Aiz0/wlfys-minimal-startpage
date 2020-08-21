@@ -29,7 +29,7 @@
 
 body {
 	background-color: var(--bg);
-	font-family: 'Space Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 	color: var(--yellow);
 }
 
@@ -96,6 +96,7 @@ form:focus-within input::placeholder {
 #links_container {
 	display: flex;
 	flex-wrap: wrap;
+	line-height: 150%;
 }
 
 #links_container li, a {
@@ -115,7 +116,6 @@ form:focus-within input::placeholder {
 
 .title {
 	font-weight: bold;
-	font-style: italic;
 }
 
 .image {
