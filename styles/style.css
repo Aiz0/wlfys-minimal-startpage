@@ -75,6 +75,8 @@ form:focus-within input::placeholder {
 #main_window {
 	background-color: var(--fg);
 	width: 910px;
+	border-radius: 2px;
+	overflow: hidden;
 	padding-right: 40px;
 	margin: 0;
 	position: absolute;
