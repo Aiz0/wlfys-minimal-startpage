@@ -4,7 +4,6 @@ This is a fork of wolfiy's simple, minimal startpage. This fork has features suc
 - Styling changes
 - Best girl
 
-The images below to not match what the page currently looks like.
 ![Fullscreen view](assets/img/fs.png) ![Responsive view](assets/img/responsive.png)
 ![Light theme](assets/img/light.png)
 
