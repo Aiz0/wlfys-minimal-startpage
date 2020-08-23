@@ -13,7 +13,7 @@
 	--bg: #282828;
 	--fg: #3f3f3f;
 
-	--search-bg: rgba(255, 255, 255, 0);
+	--search-bg: #FFF0;
 	}
 
 .lightmode {
@@ -24,7 +24,7 @@
 	--bg: #f0f0f0;
 	--fg: #e7e7e7;
 
-	--search-bg: rgba(255, 255, 255, 0);
+	--search-bg: #FFF0;
 }
 
 body {
