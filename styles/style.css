@@ -110,7 +110,6 @@ form:focus-within input::placeholder {
 }
 
 .subtitle {
-	font-weight: bold;
 	color: var(--red);
 }
 
