@@ -10,11 +10,13 @@ const themeToggle = document.querySelector('#theme-toggle');
 const enableLightTheme = () => {
 	document.body.classList.add('lightTheme');
 	localStorage.setItem('lightTheme', 'enabled');
+	console.info("Light theme enabled!")
 }
 
 const disableLightTheme = () => {
 	document.body.classList.remove('lightTheme');
 	localStorage.setItem('lightTheme', null);
+	console.info("Light theme disabled!")
 }
 
 if (lightTheme === 'enabled') {
@@ -25,11 +27,8 @@ themeToggle.addEventListener('click', () => {
 	lightTheme = localStorage.getItem('lightTheme');
 	if (lightTheme !== 'enabled') {
 		enableLightTheme();
-		console.info("Light theme enabled!")
 	} else {
 		disableLightTheme();
-		console.info("Light theme disabled!")
 	}
-
 	console.log('lightTheme:', localStorage.getItem('lightTheme'));
 });
