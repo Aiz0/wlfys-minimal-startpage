@@ -113,10 +113,6 @@ form:focus-within input::placeholder {
 	color: var(--color-1);
 }
 
-.title {
-	font-weight: bold;
-}
-
 #left_img {
 	max-width: 250px;
 	float: left;
