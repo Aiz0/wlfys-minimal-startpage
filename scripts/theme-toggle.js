@@ -4,30 +4,30 @@
 */
 
 
-let lightMode = localStorage.getItem('lightMode');
-const lightModeToggle = document.querySelector('#light-mode-toggle');
+let lightTheme = localStorage.getItem('lightTheme');
+const themeToggle = document.querySelector('#theme-toggle');
 
-const enableLightMode = () => {
-	document.body.classList.add('lightmode');
-	localStorage.setItem('lightMode', 'enabled');
+const enableLightTheme = () => {
+	document.body.classList.add('lightTheme');
+	localStorage.setItem('lightTheme', 'enabled');
 }
 
-const disableLightMode = () => {
-	document.body.classList.remove('lightmode');
-	localStorage.setItem('lightMode', null);
+const disableLightTheme = () => {
+	document.body.classList.remove('lightTheme');
+	localStorage.setItem('lightTheme', null);
 }
 
-if (lightMode === 'enabled') {
-	enableLightMode();
+if (lightTheme === 'enabled') {
+	enableLightTheme();
 }
 
-lightModeToggle.addEventListener('click', () => {
-	lightMode = localStorage.getItem('lightMode');
-	if (lightMode !== 'enabled') {
-		enableLightMode();
-		console.log(lightMode);
+themeToggle.addEventListener('click', () => {
+	lightTheme = localStorage.getItem('lightTheme');
+	if (lightTheme !== 'enabled') {
+		enableLightTheme();
+		console.log(lightTheme);
 	} else {
-		disableLightMode();
-		console.log(lightMode);
+		disableLightTheme();
+		console.log(lightTheme);
 	}
 });

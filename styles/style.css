@@ -16,7 +16,7 @@
 	--search-bg: #FFF0;
 	}
 
-.lightmode {
+.lightTheme {
 	--red: #5f605b;
 	--white: #7f807b;
 	--yellow: #494846;
@@ -144,11 +144,11 @@ form:focus-within input::placeholder {
 	text-decoration: underline;
 }
 
-#light-mode-toggle {
+#theme-toggle {
 	cursor: pointer;
 }
 
-#light-mode-toggle:hover {
+#theme-toggle:hover {
 	text-decoration: underline;
 }
 
