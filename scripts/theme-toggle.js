@@ -25,9 +25,11 @@ themeToggle.addEventListener('click', () => {
 	lightTheme = localStorage.getItem('lightTheme');
 	if (lightTheme !== 'enabled') {
 		enableLightTheme();
-		console.log(lightTheme);
+		console.info("Light theme enabled!")
 	} else {
 		disableLightTheme();
-		console.log(lightTheme);
+		console.info("Light theme disabled!")
 	}
+
+	console.log('lightTheme:', localStorage.getItem('lightTheme'));
 });
