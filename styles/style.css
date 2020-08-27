@@ -99,7 +99,7 @@ form:focus-within input::placeholder {
 	line-height: 150%;
 }
 
-#links_container li, a {
+#links_container a {
 	color: var(--color-2);
 	text-decoration: none;
 }
