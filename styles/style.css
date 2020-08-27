@@ -27,9 +27,9 @@
 	--search-bg: #FFF0;
 }
 
-@font-family {
+@font-face {
 	font-family: 'Roboto Mono';
-	src: 'assets/font/RobotoMono-VariableFont_wght.ttf' format
+	src: url('../assets/font/RobotoMono-VariableFont_wght.ttf');
 }
 
 
