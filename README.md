@@ -10,4 +10,6 @@ This is a fork of wolfiy's simple, minimal startpage. This fork has features suc
 ## Credits
 wolfiy's original project on [gitlab](https://gitlab.com/wolfiy/wlfys-minimal-startpage).
 
+The [Roboto](https://github.com/googlefonts/roboto) font is licensed under the [Apache-2.0 License](license/Apache-2.0.txt).
+
 I don't know who created the art but I found it [here](https://wall.alphacoders.com/big.php?i=644961).
