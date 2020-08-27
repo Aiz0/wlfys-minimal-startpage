@@ -1,8 +1,8 @@
 /*Change these variables to match with your setup. */
 :root {
-	--red: #BD9980;
-	--white: #DCDCCC;
-	--yellow: #f0dfaf;
+	--color-1: #BD9980;
+	--color-2: #DCDCCC;
+	--color-3: #f0dfaf;
 
 	--bg: #282828;
 	--fg: #3f3f3f;
@@ -11,9 +11,9 @@
 	}
 
 .lightTheme {
-	--red: #5f605b;
-	--white: #7f807b;
-	--yellow: #494846;
+	--color-1: #5f605b;
+	--color-2: #7f807b;
+	--color-3: #494846;
 
 	--bg: #f0f0f0;
 	--fg: #e7e7e7;
@@ -30,7 +30,7 @@
 body {
 	background-color: var(--bg);
 	font-family: 'Roboto Mono', monospace;
-	color: var(--yellow);
+	color: var(--color-3);
 }
 
 ul {
@@ -60,11 +60,11 @@ form input[type="search"] {
 	font: inherit;
 	margin-left: 12px;
 	width: 95%;
-	color: var(--yellow);
+	color: var(--color-3);
 }	
 
 form label {
-	color: var(--yellow);
+	color: var(--color-3);
 	position: absolute;
 }
 
@@ -100,17 +100,17 @@ form:focus-within input::placeholder {
 }
 
 #links_container li, a {
-	color: var(--white);
+	color: var(--color-2);
 	text-decoration: none;
 }
 
 #links_container a:hover {
-	color: var(--red);
+	color: var(--color-1);
 	transition: all 0.4s;
 }
 
 .subtitle {
-	color: var(--red);
+	color: var(--color-1);
 }
 
 .title {
@@ -131,7 +131,7 @@ form:focus-within input::placeholder {
 
 .bottom a {
 	text-decoration: none;
-	color: var(--yellow);
+	color: var(--color-3);
 }
 
 .bottom a:hover {
