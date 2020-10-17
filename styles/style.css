@@ -127,7 +127,7 @@ form:focus-within input::placeholder {
 
 .bottom a {
     text-decoration: none;
-    color: var(--color-3);
+    color: inherit;
 }
 
 .bottom a:hover {
@@ -135,7 +135,13 @@ form:focus-within input::placeholder {
 }
 
 #theme-toggle {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
     cursor: pointer;
+    padding: 0;
+    color: inherit;
 }
 
 #theme-toggle:hover {
