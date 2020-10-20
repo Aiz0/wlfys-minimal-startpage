@@ -2,7 +2,7 @@
 :root {
     --color-1: #6088dd;
     --color-2: #f2f2f4;
-    --color-3: #f05656;
+    --color-3: #ff6565;
 
     --bg: #242c38;
     --fg: #333b47;
@@ -60,7 +60,7 @@ form input[type="search"] {
     font: inherit;
     margin-left: 12px;
     width: 95%;
-    color: var(--color-3);
+    color: var(--color-1);
 }
 
 form label {
