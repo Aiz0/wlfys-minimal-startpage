@@ -55,6 +55,7 @@ form {
 form input[type="search"] {
     background-color: var(--search-bg);
     border: none;
+    outline: none;
     box-sizing: border-box;
     font-weight: bold;
     font: inherit;
