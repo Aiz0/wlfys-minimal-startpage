@@ -8,7 +8,7 @@
     --fg: #292f3a;
 
     --search-bg: #FFF0;
-    }
+}
 
 .lightTheme {
     --color-1: #5f605b;
@@ -194,5 +194,21 @@ form:focus-within input::placeholder {
 @media (max-width: 450px) {
     form input[type="search"] {
         width: 90%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    #main_window {
+        width: 1000px;
+    }
+
+    #left_img {
+        max-width:300px;
+    }
+
+    #content {
+        margin-left: 350px;
+
     }
 }
